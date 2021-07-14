@@ -57,3 +57,18 @@ img{
   margin:auto;
   padding:10px;
 }
+div{
+  justify-self: end;
+  background-color: lightblue;
+  border: solid 2px black;
+  border-top:none;
+  padding: 10px;
+  
+}
+ol{
+  list-style: inside;
+  list-style-type: lower-roman;
+}
+#topTen{
+  padding-bottom: 10px;
+}

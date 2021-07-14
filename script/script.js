@@ -87,5 +87,60 @@ else{
   alert('I did\'t understant that please try again')
 }
 
-alert('Thank you for playing my game ' + name + ', please enjoy the webpage about me!')
+//Guess a number question.
+let myNumb = 100;
+let number = Math.floor(Math.random() * myNumb + 1);
+let tries = 3;
+let count = 0;
+
+while(attempt !== number){
+  var attempt = prompt("Please guess my number. It is between 1 and " + myNumb);
+  count += 1;
+  if (attempt > number){
+    alert('your guess is too high please try again');
+  }
+  if (attempt < number){
+    alert('your guess is too low please try again')
+  }
+  if (count > tries){
+    alert('sorry you have no more tries left the number was ' + number);
+    break
+  }
+  if (attempt == number){
+    alert('congradulation!! you guessed the correct number, the number was ' + number);
+    break
+  }
+}
+
+//Guessing from an array. 
+const classArray = ['robotics one', 'robotics two', 'robotics three', 'intro to computer science', 'codeing'];
+let guess = 0;
+let answer = false
+while(!answer && guess < 6){
+  let classes = prompt('what are the classes that I teach?');
+   for (let i = 0; i < classArray.length; i++){
+    if(classes === classArray[i]){
+     alert('you got one correct!!');
+    answer = true;
+    break;
+   }
+  }
+  if(answer){
+    alert('Good Job, here are your other choices taht you could have gotten ' + classArray);
+  }
+  if(!answer){
+    alert('sorry please try again')
+  }
+  if(!answer && guess === 6){
+    alert('sorry you did not get this correct the possible answers are ' + classArray);
+  }
+  guess++;
+}
+
+
+
+
+
+
+
 
