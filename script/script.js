@@ -23,8 +23,6 @@ function correct(){
   }
 }
 function incorrect(){
-
-  
   if (subject === 'yes' || subject === 'y'){
     //  console.log('that is not correct')
     alert('That is not correct!!')
