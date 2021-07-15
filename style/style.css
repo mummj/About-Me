@@ -58,17 +58,28 @@ img{
   padding:10px;
 }
 div{
-  justify-self: end;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
   background-color: lightblue;
-  border: solid 2px black;
-  border-top:none;
-  padding: 10px;
-  
+  margin:20px 2px;
 }
 ol{
   list-style: inside;
-  list-style-type: lower-roman;
+  list-style-type: decimal;
+  padding-left: 50px;
 }
 #topTen{
   padding-bottom: 10px;
+}
+#left{
+ border: solid 2px black;
+ padding:5px;
+}
+#right{
+  border:solid 2px black;
+  padding: 5px
+}
+.bottomImg{
+  display: inline;
+  padding-left: 9%;
 }

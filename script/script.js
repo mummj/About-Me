@@ -2,6 +2,7 @@
 
 // console.log('hello world');
 //Introduction Question
+let score = 0
 let name = prompt('Hello, Welcome to my site. Please tell me your name');
 alert('Welcome to my site ' + name + '. You are going to play a little guessing game about me.' );
 
@@ -14,6 +15,7 @@ let teacher = teacherLow.toLowerCase();
 if (teacher === 'yes' || teacher === 'y'){
   // console.log('that is correct')
   alert('That is correct!!')
+  score++;
 } 
 else if(teacher === 'no' || teacher === 'n'){
 //  console.log('that is not correct')
@@ -34,6 +36,7 @@ if (subject === 'yes' || subject === 'y'){
 else if(subject === 'no' || subject === 'n'){
   // console.log('that is correct')
   alert('That is correct!')
+  score++;
 }
 else{
   alert('I did\'t understant that please try again')
@@ -46,6 +49,7 @@ let coach = coachLow.toLowerCase();
 if (coach === 'yes' || coach === 'y'){
   // console.log('that is correct')
   alert('That is correct!!')
+  score++;
 } 
 else if(coach === 'no' || coach === 'n'){
   //  console.log('that is not correct')
@@ -66,6 +70,7 @@ if (level === 'yes' || level === 'y'){
 else if(level === 'no' || level === 'n'){
   // console.log('that is correct')
   alert('That is correct!')
+  score++;
 }
 else{
   alert('I did\'t understant that please try again')
@@ -78,6 +83,7 @@ let diration = dirationLow.toLowerCase();
 if (diration === 'yes' || diration === 'y'){
   // console.log('that is correct')
   alert('That is correct!!')
+  score++;
 } 
 else if(diration === 'no' || diration === 'n'){
   //  console.log('that is not correct')
@@ -108,12 +114,13 @@ while(attempt !== number){
   }
   if (attempt == number){
     alert('congradulation!! you guessed the correct number, the number was ' + number);
+    score++;
     break
   }
 }
 
 //Guessing from an array. 
-const classArray = ['robotics one', 'robotics two', 'robotics three', 'intro to computer science', 'codeing'];
+const classArray = [' robotics one', ' robotics two', ' robotics three', ' intro to computer science', ' codeing'];
 let guess = 0;
 let answer = false
 while(!answer && guess < 6){
@@ -126,7 +133,8 @@ while(!answer && guess < 6){
    }
   }
   if(answer){
-    alert('Good Job, here are your other choices taht you could have gotten ' + classArray);
+    alert('Good Job, here are your other choices that you could have gotten ' + classArray);
+    score++;
   }
   if(!answer){
     alert('sorry please try again')
@@ -137,7 +145,7 @@ while(!answer && guess < 6){
   guess++;
 }
 
-
+alert('Thank you ' + name + ' for playing my game. You got ' + score + ' correct out of 7 questions good job!! Please enjoy my site about me.')
 
 
 
