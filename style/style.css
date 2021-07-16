@@ -2,11 +2,23 @@ body{
   background-color: coral;
   height: 100%;
 }
+header{
+  background-color: lightblue;
+  margin-top: 1%;
+  border:2px solid black;
+  margin:2px;
+}
 h1{
   font-size: 32px;
   text-align: center;
-  color:lightblue;
+  color:coral;
   padding:5px;
+}
+#welcome{
+  color:lightcoral;
+  text-align: center;
+  font-size: 24px;
+  padding-bottom:5px;
 }
 h2{
   color:black;
@@ -59,7 +71,7 @@ img{
 }
 div{
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns:250px 1fr;
   background-color: lightblue;
   margin:20px 2px;
 }
@@ -68,16 +80,19 @@ ol{
   list-style-type: decimal;
   padding-left: 50px;
 }
+ol li{
+  padding:5px;
+}
 #topTen{
   padding-bottom: 10px;
 }
-#left{
- border: solid 2px black;
- padding:5px;
+ #left{
+  border: solid 2px black;
+  padding:5px;
 }
-#right{
+ #lowerImage{
   border:solid 2px black;
-  padding: 5px
+  padding: 5px;
 }
 .bottomImg{
   display: inline;
